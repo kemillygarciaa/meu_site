@@ -16,7 +16,7 @@ body{
     background-color: var(--fundo-site);
 }
 
-/* HEADER */
+
 header{
     width: 100%;
 }
@@ -62,3 +62,466 @@ header>div.container-flex{
 #menu_botao{
     display: none;
 }
+
+.banner {
+    width: 100%;      
+    height: 300px;   
+    background-image: url(./imgs/banner.png);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-position: 0 -10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+
+
+.sobre-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.sobre-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.linha {
+    width: 150px;
+    height: 3px;
+    background-color: #4700CF;
+    margin: 10px auto 40px auto;
+    border-radius: 5px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.galeria img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.texto {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 16px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+
+.produtos-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.produtos-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.produtos-container .linha {
+    width: 300px;
+    height: 4px;
+    background-color: var(--roxo);
+    margin: 10px auto 50px auto;
+    border-radius: 8px;
+}
+
+
+.produtos-grid {
+    display: grid;
+  
+    gap: 40px;
+    justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.produto-card {
+    width: 260px;
+    height: 260px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.produto-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    
+}
+
+
+.produto-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+#contato .title-box {
+    text-align: center;
+    padding: 40px 0;
+    background: #efefef;
+}
+
+#contato .title-box h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#contato .title-box .linha {
+    width: 120px;
+    height: 3px;
+    background: #4700CF;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+#contato .form-area {
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #4700CF, #ffa600);
+    display: flex;
+    justify-content: center;
+}
+
+#contato .form-box {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 40px;
+    border-radius: 25px;
+    backdrop-filter: blur(7px);
+    color: var(--roxo);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#contato .form-box label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#contato .form-box input,
+#contato .form-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#contato .form-box textarea {
+    height: 90px;
+    resize: none;
+}
+
+#contato .form-box button {
+    background:var(--roxo);
+    color:var(--branco);
+    border: none;
+    padding: 10px 35px;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#contato .form-box button:hover {
+    background:var(--roxo);
+}
+
+
+.horarios-container {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.horarios-container h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.horarios-container .linha {
+    width: 250px;
+    height: 3px;
+    background-color:var(--roxo);
+    margin: 0 auto 40px auto;
+    border-radius: 5px;
+}
+
+.horarios-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.horarios-imagem {
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.horarios-texto {
+    font-size: 22px;
+    max-width: 350px;
+    text-align: left;
+    color: #333;
+}
+
+
+
+.planos-container {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.planos-container h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.planos-container .linha {
+    width: 200px;
+    height: 3px;
+    background-color: var(--roxo);
+    margin: 0 auto 40px auto;
+    border-radius: 5px;
+}
+
+.planos-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.plano-card img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.plano-card img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+footer {
+    background-color: var(--roxo);
+    padding: 50px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.logo-area h2 {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.social-text {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.item span {
+    font-size: 20px;
+}
+
+/*===============================
+  RESPONSIVIDADE MENU
+================================*/
+#menu_botao {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#icone-x {
+    display: none;
+    width: 40px;
+}
+#icone-barras {
+    width: 40px;
+}
+
+/* MENU MOBILE */
+@media (max-width: 900px) {
+
+    .links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #ffffff;
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 30px;
+        transition: 0.4s;
+        box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+    }
+
+    .links a {
+        font-size: 22px;
+    }
+
+    /* Quando menu estiver aberto */
+    .links.ativo {
+        right: 0;
+    }
+
+    #menu_botao {
+        display: block;
+        z-index: 999;
+    }
+
+    /* Logo diminui */
+    #Logo {
+        width: 130px;
+    }
+
+    header > .container-flex {
+        height: 120px;
+    }
+}
+
+
+/*===============================
+  RESPONSIVIDADE GERAL DO SITE
+================================*/
+
+@media (max-width: 900px) {
+
+    .banner {
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .galeria img {
+        width: 160px;
+        height: 200px;
+    }
+
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .produto-card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .horarios-conteudo {
+        flex-direction: column;
+    }
+
+    .horarios-imagem {
+        width: 90%;
+    }
+
+    .planos-grid img {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .produto-card {
+        width: 80%;
+        height: 250px;
+    }
+
+    .galeria img {
+        width: 130px;
+        height: 170px;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .social-icons {
+        gap: 40px;
+    }
+}
+
+
